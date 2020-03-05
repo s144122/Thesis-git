@@ -1,0 +1,49 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Vagrant multi-machine sample setup
+
+
+Vagrant.configure("2") do |config|
+
+	#subconfig.vm.network "VM_network"
+    #config.vm.box = "bento/ubuntu-16.04"
+    #config.vm.box = "hashicorp/precise64"
+	#config.vm.box = "ubuntu/trusty32"
+	
+	config.vm.box = "bento/ubuntu-18.04"
+  
+  config.vm.define "server" do |subconfig|
+    subconfig.vm.hostname = "server"
+    subconfig.vm.network :private_network, ip: "10.0.0.1",
+		  virtualbox__intnet: "VM_network_server"
+	subconfig.vm.synced_folder "server/", "/usr/shared", create: true
+	subconfig.vm.provision "up", type: "shell", run: "always", path: ".provision/server.sh"
+  end
+  
+  config.vm.define "VPN" do |subconfig|
+    subconfig.vm.hostname = "VPN"
+    subconfig.vm.network :private_network, ip: "192.168.1.2",
+		 virtualbox__intnet: "VM_network_client"
+	subconfig.vm.synced_folder "VPN-client/", "/usr/shared", create: true
+	subconfig.vm.provision "shell", path: ".provision/VPN.sh"
+  end
+  
+  config.vm.define "client" do |subconfig|
+    subconfig.vm.hostname = "client"
+    subconfig.vm.network :private_network, ip: "192.168.1.1",
+		  virtualbox__intnet: "VM_network_client"
+	subconfig.vm.synced_folder "VPN-client/", "/usr/shared", create: true
+	subconfig.vm.provision "shell", path: ".provision/client.sh"
+  end
+  
+  config.vm.define "router" do |subconfig|
+    subconfig.vm.hostname = "router"
+    subconfig.vm.network :private_network, ip: "10.0.0.254",
+		 virtualbox__intnet: "VM_network_server"
+	subconfig.vm.network :private_network, ip: "192.168.1.254",
+		 virtualbox__intnet: "VM_network_client"
+	subconfig.vm.synced_folder "router/", "/usr/shared", create: true
+	subconfig.vm.provision "shell", path: ".provision/router.sh"
+  end
+ end
