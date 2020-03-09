@@ -61,15 +61,15 @@ export KEY_EXPIRE=3650
 # These are the default values for fields
 # which will be placed in the certificate.
 # Don't leave any of these fields blank.
-export KEY_COUNTRY=	"DK"
-export KEY_PROVINCE=	"Copenhagen"
-export KEY_CITY=	"Lyngby"
-export KEY_ORG=		"VPN"
-export KEY_EMAIL= class="hljs-string">"s144122@student.dtu.dk"
-export KEY_OU=		"DTU"
+export KEY_COUNTRY="DK"
+export KEY_PROVINCE="Copenhagen"
+export KEY_CITY="Lyngby"
+export KEY_ORG="VPN"
+export KEY_EMAIL=class="hljs-string">"s144122@student.dtu.dk"
+export KEY_OU="MyOrganizationalUnit"
 
 # X509 Subject Field
-export KEY_NAME="vpnserver"
+export KEY_NAME="EasyRSA"
 
 # PKCS11 Smart Card
 # export PKCS11_MODULE_PATH="/usr/lib/changeme.so"

@@ -4,21 +4,25 @@
 #sudo dos2unix -n /usr/shared/vpnsetup.sh /usr/shared/vpnsetupUnix.sh
 
 #sudo -u vagrant -H bash <<EOF
-cd /home/vagrant/
-echo $PWD
 sudo apt-get -y update
 sudo apt-get -y install openvpn easy-rsa
-make-cadir ~/openvpn-ca
-cd ~/openvpn-ca
+sudo apt-get -y install dos2unix
+
+cd /home/vagrant/
+echo $PWD
+make-cadir /home/vagrant/openvpn-ca
+echo $PWD
+cd /home/vagrant/openvpn-ca
+echo $PWD
 #cp /usr/shared/vars /home/vagrant/openvpn-ca/
 #mv /home/vagrant/openvpn-ca/openssl-1.0.0.cnf /home/vagrant/openvpn-ca/openssl.cnf
-cp /usr/shared/vars ~/openvpn-ca/
-cat vars
+cp /usr/shared/vars /home/vagrant/openvpn-ca
 mv openssl-1.0.0.cnf openssl.cnf
 echo $PWD
+#dos2unix -n /usr/shared/vars /usr/shared/vars.sh
 source vars
 ./clean-all
-./build-ca
+printf '\n\n\n\n\n\n\n'|./build-ca 
 #/home/vagrant/openvpn-ca/build-key-server vpnserver -y
 #/home/vagrant/openvpn-ca/build-dh
 #openvpn --genkey --secret keys/ta.key

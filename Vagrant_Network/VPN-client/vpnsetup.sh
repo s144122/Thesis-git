@@ -3,7 +3,7 @@
 sudo apt-get -y update
 sudo apt-get -y install openvpn easy-rsa
 make-cadir /home/vagrant/openvpn-ca
-#sudo cd ~/openvpn-ca
+cd ~/openvpn-ca
 cp /usr/shared/vars /home/vagrant/openvpn-ca/
 mv /home/vagrant/openvpn-ca/openssl-1.0.0.cnf /home/vagrant/openvpn-ca/openssl.cnf
 /home/vagrant/openvpn-ca/source vars
