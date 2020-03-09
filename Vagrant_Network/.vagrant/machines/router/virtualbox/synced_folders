@@ -1,0 +1,1 @@
+{"virtualbox":{"/usr/shared":{"create":true,"guestpath":"/usr/shared","hostpath":"D:/Skole sager/DTU/Master/Speciale/Thesis-git/Vagrant_Network/router","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"D:/Skole sager/DTU/Master/Speciale/Thesis-git/Vagrant_Network","disabled":false,"__vagrantfile":true}}}
