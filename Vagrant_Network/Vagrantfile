@@ -31,22 +31,22 @@ Vagrant.configure("2") do |config|
 	# subconfig.vm.provision "shell", path: ".provision/router.sh"
   # end
   
-  config.vm.define "VPN" do |subconfig|
-    subconfig.vm.hostname = "VPN"
-    subconfig.vm.network :private_network, ip: "192.168.1.20",
-		 virtualbox__intnet: "VM_network_client"
-	subconfig.vm.synced_folder "VPN-client/", "/usr/shared", create: true
-	subconfig.vm.provision "shell", path: ".provision/VPN.sh"
-    #subconfig.vm.provision :shell, :path => ".provision/VPN.sh", privileged: false
-  end
-  
-  # config.vm.define "client" do |subconfig|
-    # subconfig.vm.hostname = "client"
-    # subconfig.vm.network :private_network, ip: "192.168.1.10",
-		  # virtualbox__intnet: "VM_network_client"
+  # config.vm.define "VPN" do |subconfig|
+    # subconfig.vm.hostname = "VPN"
+    # subconfig.vm.network :private_network, ip: "192.168.1.2",
+		 # virtualbox__intnet: "VM_network_client"
 	# subconfig.vm.synced_folder "VPN-client/", "/usr/shared", create: true
-	# subconfig.vm.provision "shell", path: ".provision/client.sh"
+	# subconfig.vm.provision "shell", path: ".provision/VPN.sh"
+    # #subconfig.vm.provision :shell, :path => ".provision/VPN.sh", privileged: false
   # end
+  
+  config.vm.define "client" do |subconfig|
+    subconfig.vm.hostname = "client"
+    subconfig.vm.network :private_network, ip: "192.168.1.1",
+		  virtualbox__intnet: "VM_network_client"
+	subconfig.vm.synced_folder "VPN-client/", "/usr/shared", create: true
+	subconfig.vm.provision "shell", path: ".provision/client.sh"
+  end
   
 
  end

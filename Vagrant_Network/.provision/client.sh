@@ -1,45 +1,14 @@
 #!/bin/bash
 
 # Update Packages
-#apt-get update
-
-echo "Hello world"
-sudo apt-get -y install dos2unix
+apt-get update
+#sudo apt-get -y install dos2unix
 sudo apt-get -y install openvpn
 
-sudo cp /usr/shared/client.ovpn /etc/openvpn/client.conf
-#sudo openvpn --client --config /etc/openvpn/client.conf
-dos2unix -n /usr/shared/traffic.sh /usr/shared/trafficUnix.sh
-#sudo systemctl start openvpn@client
+#dos2unix -n /usr/shared/traffic.sh /usr/shared/trafficUnix.sh
 
 
-
-
-
-
-
-
-
-
-#bash /usr/shared/trafficUnix.sh
-# while :
-# do
-	# if $RANDOM > 32767/2
-	# then #to vpn
-		# ip route del default  
-		# ip route add default via 10.0.0.30
-		# for i in seq $RANDOM
-		# do
-			# #wget 10.0.0.10
-			# curl 10.0.0.10 
-		# done
-	# else #to router
-		# ip route del default  
-		# ip route add default via 10.0.0.40
-		# for i in seq $RANDOM
-		# do
-			# #wget 10.0.0.10
-			# curl 10.0.0.10
-		# done
-	# fi
-# done
+cp /usr/shared/ca.crt /usr/shared/client.crt /usr/shared/client.key /etc/openvpn
+cp /usr/shared/client.conf /etc/openvpn
+cd /etc/openvpn
+sudo openvpn /etc/openvpnclient.conf
