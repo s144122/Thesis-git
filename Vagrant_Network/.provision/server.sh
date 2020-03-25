@@ -18,3 +18,9 @@ ln -s /vagrant /var/www
 
 # seing the network traffic if on VM
 sudo apt-get install iftop 
+
+sudo ip route add 192.168.100.0/24 via 10.0.100.1 dev eth1
+
+
+
+#sudo tcpdump -i eth1

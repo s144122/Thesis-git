@@ -1,0 +1,99 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=DK, ST=Copenhagen, L=Lyngby, O=VPN, OU=DTU, CN=VPN CA/name=server/emailAddress=s144122@student.dtu.dk
+        Validity
+            Not Before: Mar 21 12:08:01 2020 GMT
+            Not After : Mar 19 12:08:01 2030 GMT
+        Subject: C=DK, ST=Copenhagen, L=Lyngby, O=VPN, OU=DTU, CN=server/name=server/emailAddress=s144122@student.dtu.dk
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:c0:0b:8b:55:97:f5:e4:d1:6a:08:93:2c:ac:de:
+                    f5:08:35:2b:34:9d:ba:92:27:dc:77:14:90:14:ef:
+                    ed:3d:2f:e6:b8:bf:40:31:a8:ef:0b:4e:0a:c7:00:
+                    86:cd:88:c5:a8:74:97:d7:c8:16:80:a9:41:86:42:
+                    b0:67:09:4c:0a:3a:4b:56:74:9f:69:9a:b1:ba:b3:
+                    45:82:92:6d:29:73:69:68:1f:18:c7:66:23:d8:f9:
+                    8b:14:87:0c:85:df:3d:f5:ec:bd:38:35:6d:05:85:
+                    2b:a3:c1:d9:ed:f8:d6:52:51:29:eb:d2:72:21:47:
+                    80:4f:aa:f5:12:1c:2f:e6:64:f7:8c:bc:92:05:95:
+                    c7:50:5c:b6:c5:ae:34:f1:62:a6:43:3d:7e:da:19:
+                    1f:6c:cb:7b:74:ff:70:c8:45:1f:8d:de:68:63:6d:
+                    e1:53:36:4f:88:0e:de:dc:be:57:81:4e:20:41:81:
+                    be:29:0e:75:4d:6f:8b:67:5a:39:a5:36:c2:b8:79:
+                    59:9c:b9:a4:7e:db:cf:88:0f:fc:aa:e1:a1:27:5f:
+                    5f:8b:fa:04:49:fd:58:60:09:5c:d2:e0:ba:91:54:
+                    33:89:c1:87:c8:17:cf:ae:07:2a:c3:c7:cb:be:b1:
+                    70:f5:9d:0b:bb:cb:9c:6b:7c:3a:74:78:b4:d7:57:
+                    c8:65
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Server
+            Netscape Comment: 
+                Easy-RSA Generated Server Certificate
+            X509v3 Subject Key Identifier: 
+                FB:84:EE:D3:20:E1:65:21:2E:9F:EF:2D:94:FB:A5:5F:E8:7E:E9:CC
+            X509v3 Authority Key Identifier: 
+                keyid:D5:7F:D9:AD:77:25:BF:13:64:05:F5:A3:8C:4A:CB:16:33:AB:B6:D5
+                DirName:/C=DK/ST=Copenhagen/L=Lyngby/O=VPN/OU=DTU/CN=VPN CA/name=server/emailAddress=s144122@student.dtu.dk
+                serial:73:77:93:00:43:D2:F2:1E:F6:E5:DE:3A:D7:01:6F:0F:46:00:00:A8
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:server
+    Signature Algorithm: sha256WithRSAEncryption
+         d8:7c:d4:fe:7a:b6:cf:57:cb:b7:21:ac:60:ed:10:86:6b:f5:
+         af:ea:a8:12:d7:86:9f:3c:96:86:19:68:2d:fb:ad:31:54:c3:
+         cd:02:89:14:60:49:ae:31:eb:cf:9d:14:d7:08:5d:51:b5:92:
+         2f:57:81:33:57:60:50:77:b3:25:62:4d:30:97:74:6d:df:e3:
+         e8:45:6c:b4:8f:27:4a:ac:6f:bb:fb:25:d5:76:87:7c:55:69:
+         c3:61:68:77:e6:5e:e9:7c:1d:28:dd:2a:44:45:fe:1b:51:93:
+         28:ca:85:2c:82:14:ca:d4:96:6f:a2:77:87:f8:da:2c:78:cc:
+         08:97:39:8a:be:42:90:79:ba:3f:32:db:cc:bf:3d:8b:b3:20:
+         08:44:9d:c9:4f:e7:0b:48:95:d1:c0:75:3d:73:e4:56:8a:ae:
+         88:ea:1d:88:2a:fa:ca:9d:27:ee:b2:37:93:e8:ff:a2:c0:a2:
+         4e:e4:a2:72:08:da:93:85:1c:f6:fc:85:c3:0a:c2:6f:c0:a9:
+         98:82:58:54:79:bf:d0:06:7a:d6:a5:f0:ba:c6:7f:7f:d1:a7:
+         56:53:3a:2c:c5:9a:65:d0:8d:61:17:b5:26:09:c0:b2:ae:c4:
+         5a:86:97:21:85:48:10:18:a9:f0:3b:bb:75:b5:96:9a:6c:52:
+         eb:2a:e1:99
+-----BEGIN CERTIFICATE-----
+MIIFNjCCBB6gAwIBAgIBATANBgkqhkiG9w0BAQsFADCBmDELMAkGA1UEBhMCREsx
+EzARBgNVBAgTCkNvcGVuaGFnZW4xDzANBgNVBAcTBkx5bmdieTEMMAoGA1UEChMD
+VlBOMQwwCgYDVQQLEwNEVFUxDzANBgNVBAMTBlZQTiBDQTEPMA0GA1UEKRMGc2Vy
+dmVyMSUwIwYJKoZIhvcNAQkBFhZzMTQ0MTIyQHN0dWRlbnQuZHR1LmRrMB4XDTIw
+MDMyMTEyMDgwMVoXDTMwMDMxOTEyMDgwMVowgZgxCzAJBgNVBAYTAkRLMRMwEQYD
+VQQIEwpDb3BlbmhhZ2VuMQ8wDQYDVQQHEwZMeW5nYnkxDDAKBgNVBAoTA1ZQTjEM
+MAoGA1UECxMDRFRVMQ8wDQYDVQQDEwZzZXJ2ZXIxDzANBgNVBCkTBnNlcnZlcjEl
+MCMGCSqGSIb3DQEJARYWczE0NDEyMkBzdHVkZW50LmR0dS5kazCCASIwDQYJKoZI
+hvcNAQEBBQADggEPADCCAQoCggEBAMALi1WX9eTRagiTLKze9Qg1KzSdupIn3HcU
+kBTv7T0v5ri/QDGo7wtOCscAhs2Ixah0l9fIFoCpQYZCsGcJTAo6S1Z0n2masbqz
+RYKSbSlzaWgfGMdmI9j5ixSHDIXfPfXsvTg1bQWFK6PB2e341lJRKevSciFHgE+q
+9RIcL+Zk94y8kgWVx1BctsWuNPFipkM9ftoZH2zLe3T/cMhFH43eaGNt4VM2T4gO
+3ty+V4FOIEGBvikOdU1vi2daOaU2wrh5WZy5pH7bz4gP/KrhoSdfX4v6BEn9WGAJ
+XNLgupFUM4nBh8gXz64HKsPHy76xcPWdC7vLnGt8OnR4tNdXyGUCAwEAAaOCAYcw
+ggGDMAkGA1UdEwQCMAAwEQYJYIZIAYb4QgEBBAQDAgZAMDQGCWCGSAGG+EIBDQQn
+FiVFYXN5LVJTQSBHZW5lcmF0ZWQgU2VydmVyIENlcnRpZmljYXRlMB0GA1UdDgQW
+BBT7hO7TIOFlIS6f7y2U+6Vf6H7pzDCB2AYDVR0jBIHQMIHNgBTVf9mtdyW/E2QF
+9aOMSssWM6u21aGBnqSBmzCBmDELMAkGA1UEBhMCREsxEzARBgNVBAgTCkNvcGVu
+aGFnZW4xDzANBgNVBAcTBkx5bmdieTEMMAoGA1UEChMDVlBOMQwwCgYDVQQLEwNE
+VFUxDzANBgNVBAMTBlZQTiBDQTEPMA0GA1UEKRMGc2VydmVyMSUwIwYJKoZIhvcN
+AQkBFhZzMTQ0MTIyQHN0dWRlbnQuZHR1LmRrghRzd5MAQ9LyHvbl3jrXAW8PRgAA
+qDATBgNVHSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMCBaAwEQYDVR0RBAowCIIG
+c2VydmVyMA0GCSqGSIb3DQEBCwUAA4IBAQDYfNT+erbPV8u3Iaxg7RCGa/Wv6qgS
+14afPJaGGWgt+60xVMPNAokUYEmuMevPnRTXCF1RtZIvV4EzV2BQd7MlYk0wl3Rt
+3+PoRWy0jydKrG+7+yXVdod8VWnDYWh35l7pfB0o3SpERf4bUZMoyoUsghTK1JZv
+oneH+NoseMwIlzmKvkKQebo/MtvMvz2LsyAIRJ3JT+cLSJXRwHU9c+RWiq6I6h2I
+KvrKnSfusjeT6P+iwKJO5KJyCNqThRz2/IXDCsJvwKmYglhUeb/QBnrWpfC6xn9/
+0adWUzosxZpl0I1hF7UmCcCyrsRahpchhUgQGKnwO7t1tZaabFLrKuGZ
+-----END CERTIFICATE-----

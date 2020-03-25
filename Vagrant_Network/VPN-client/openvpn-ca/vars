@@ -65,7 +65,7 @@ export KEY_COUNTRY="DK"
 export KEY_PROVINCE="Copenhagen"
 export KEY_CITY="Lyngby"
 export KEY_ORG="VPN"
-export KEY_EMAIL=class="hljs-string">"s144122@student.dtu.dk"
+export KEY_EMAIL="s144122@student.dtu.dk"
 export KEY_OU="DTU"
 
 # X509 Subject Field
