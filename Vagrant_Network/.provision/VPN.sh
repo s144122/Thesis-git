@@ -9,7 +9,7 @@
 #dos2unix -n /usr/shared/vars /usr/shared/vars.sh
 #sudo apt-get -y install expect
 
-sudo apt-get -y update
+sudo apt-get update
 sudo apt-get -y install openvpn easy-rsa
 
 
@@ -52,3 +52,6 @@ sudo iptables -t nat -I POSTROUTING -o eth1 -s 10.8.0.0/24 -j MASQUERADE
 # sudo ip route add 10.0.100.0/24 via 192.168.100.1 dev eth1
 
 #cp -avr /home/vagrant/openvpn-ca /usr/shared
+
+
+#sudo tcpdump -i tun0 -w VPN_traffic_30s.pcap

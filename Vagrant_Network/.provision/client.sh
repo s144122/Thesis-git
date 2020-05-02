@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Update Packages
-apt-get update
+sudo apt-get update
 #sudo apt-get -y install dos2unix
 sudo apt-get -y install openvpn
 sudo apt-get -y install traceroute
